@@ -1,11 +1,10 @@
 import React from 'react';
+import SignIn from '../../components/sign-in/sign-in.component';
 import './sign-in-and-sign-out.styles.scss';
 
 const SignInAndSignOutPage = () => (
   <div className="sign-in-and-sign-out">
-    <h1 className="title">I already have an account</h1>
-    <span className="subtitle">Sign in with your emai and password</span>
-    <div>Sign in page</div>
+    <SignIn />
   </div>
 );
 
