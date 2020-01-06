@@ -17,9 +17,10 @@ class SignUp extends React.Component {
   }
 
   handleSubmit = async event => {
-    event.PreventDefault();
+    event.preventDefault();
 
     const { displayName, email, password, confirmPassword } = this.state;
+
     if (password !== confirmPassword) {
       alert("passwords don't match");
       return;
@@ -46,6 +47,7 @@ class SignUp extends React.Component {
 
   handleChange = event => {
     const { name, value } = event.target;
+
     this.setState({ [name]: value });
   };
 
@@ -60,7 +62,7 @@ class SignUp extends React.Component {
             type="text"
             name="displayName"
             value={displayName}
-            onchange={this.handleChange}
+            onChange={this.handleChange}
             label="Display Name"
             required
           />
@@ -69,7 +71,7 @@ class SignUp extends React.Component {
             type="email"
             name="email"
             value={email}
-            onchange={this.handleChange}
+            onChange={this.handleChange}
             label="Email"
             required
           />
@@ -78,7 +80,7 @@ class SignUp extends React.Component {
             type="password"
             name="password"
             value={password}
-            onchange={this.handleChange}
+            onChange={this.handleChange}
             label="Password"
             required
           />
@@ -87,7 +89,7 @@ class SignUp extends React.Component {
             type="password"
             name="confirmPassword"
             value={confirmPassword}
-            onchange={this.handleChange}
+            onChange={this.handleChange}
             label="Confirm Password"
             required
           />
