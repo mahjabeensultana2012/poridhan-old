@@ -1,3 +1,5 @@
-export const UserActionType ={
-  SET_CURRENT_USER='SET_CURRENR_USER'
-}
+export const UserActionTypes = {
+  SET_CURRENT_USER: 'SET_CURRENR_USER',
+};
+
+//export default UserActionType;
